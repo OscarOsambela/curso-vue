@@ -1,0 +1,49 @@
+import {createRouter, createWebHashHistory} from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: ()=> import('@/views/HomeView.vue')
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: ()=> import('@/views/AboutView.vue')
+  },
+  {
+    path: '/counter',
+    name: 'counter',
+    component: ()=> import('@/views/Counter.vue')
+  },
+  {
+    path: '/users',
+    name: 'users',
+    component: ()=> import('@/views/Users.vue')
+  },
+  {
+    path: '/pokemon-search',
+    name: 'pokemon-search',
+    component: ()=> import('@/views/SearchPokemon.vue')
+  },
+  {
+    path: '/pokemon/:id',
+    name: 'pokemon-id',
+    component: ()=> import('@/views/Pokemon.vue')
+  },
+  {
+    path: '/todo',
+    name: 'todo',
+    component: ()=> import('@/views/TodoVuex.vue')
+  }
+
+
+]
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes
+})
+
+export default router

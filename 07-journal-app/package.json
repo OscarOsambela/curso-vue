@@ -1,0 +1,26 @@
+{
+  "name": "07-journal-app",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.2",
+    "vue-sweetalert2": "^5.0.5",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.1",
+    "sass": "^1.54.3",
+    "sass-loader": "^10.3.1",
+    "vite": "^3.0.1"
+  }
+}
